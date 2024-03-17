@@ -1,6 +1,5 @@
 # VATML: Ventricular Arrhythmia Detection using TinyML #
-![Setup Image](/images/setup.png) ![Flow Image](/images/flow.png)
-
+<img src="/images/setup.png" alt="Setup Image" width="400"/> <img src="/images/flow.png" alt="Flow Image" width="400"/>
 
 ## Have a try ##
   Step 1: 
