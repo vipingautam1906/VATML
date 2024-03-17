@@ -47,7 +47,7 @@ For Keil-MDK5
 
 ## Results on Nucleo STM32f303k8 board
 <p align="center">
-  <img src="/images/Table1.png" alt="Setup Image" width="450" height="450"/>
+  <img src="/images/Table1.png" alt="Setup Image" width="450" height="440"/>
 </p>
 <img src="/images/Table2.png" alt="Setup Image" width="1300"/>
 
