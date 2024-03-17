@@ -37,8 +37,11 @@ For Keil-MDK5
 - Load the model on STM32F303K8 
 
 ## Results on Nucleo STM32f303k8 board
-<img src="/images/Table1.png" alt="Setup Image" width="500"/> <img src="/images/lineplot.png" alt="Flow Image" width="500" height="460"/>
+<div style="text-align:center;">
+ <img src="/images/Table1.png" alt="Setup Image" width="500"/> <img src="/images/lineplot.png" alt="Flow Image" width="500" height="460"/>
 <img src="/images/Table2.png" alt="Setup Image" width="1300"/>
+</div>
+
 
 
 
