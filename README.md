@@ -26,7 +26,7 @@ Export the model from .pkl to onnx
 ```
 For CubeMX  
 
--  We have shared the pretrained weights (./Weights/model_best.onnx), import them from ./Weights/model_best.onnx  in network option, select Compression: Medium  
+-  We have shared the pretrained weights (./Weights/model_best.onnx), import them from ./Weights/model_best.onnx  in network option, select Compression: None (default)  
 -  In advanced settings, click on ONLY "Use activation buffer for input buffer" & "Use activation buffer for the output buffer" 
 
 For Keil-MDK5
