@@ -7,7 +7,13 @@ Cardiac arrhythmias pose a significant health risk, underscoring the critical ne
 - Compatible with implantable cardioverter defibrillators (ICDs)
 ![plot](/images/flow.png)
 
-## Have a try ##
+## Illustration of VA and Non-VA Rhythms through Intracardiac Electrogram (IEGMs)
+![plot](/images/VF.png)
+![plot](/images/VT.png)
+![plot](/images/SR.png)
+
+
+## Have a try 
 
 ### Set up environment
 - cd ./Python_source
