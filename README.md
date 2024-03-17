@@ -8,9 +8,12 @@ Cardiac arrhythmias pose a significant health risk, underscoring the critical ne
 ![plot](/images/flow.png)
 
 ## Illustration of VA and Non-VA Rhythms through Intracardiac Electrogram (IEGMs)
-<img src="/images/VF.png" alt="VF" width="75%">
-<img src="/images/VT.png" alt="VT" width="75%">
-<img src="/images/SR.png" alt="SR" width="75%">
+<p align="center">
+  <img src="/images/VF.png" alt="VF" width="60%">
+  <img src="/images/VT.png" alt="VT" width="60%">
+  <img src="/images/SR.png" alt="SR" width="60%">
+</p>
+
 
 
 ## Have a try 
