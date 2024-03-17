@@ -36,7 +36,9 @@ For Keil-MDK5
 - Option for Target->C/C++(AC6)->Click on "One ELF Section per Function" & "Link Time Optimization" & "Execute-only Code" & "Short enums/wchar"
 - Load the model on STM32F303K8 
 
- 
+## Results on Nucleo STM32f303k8 board
+
+
 
 
   
