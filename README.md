@@ -23,27 +23,25 @@ Cardiac arrhythmias pose a significant health risk, underscoring the critical ne
 - pip install -r requirements.txt
 
  
-### Training and Testing
-- python train.py 
+### Testing 
 - python test.py 
 
 ### Deployment on Nucleo STM32f303k8 board
-
 Export the model from .pkl to onnx 
 ```
     python pkl2onnx.py
 ```
 For CubeMX  
-
 -  We have shared the pretrained weights (./Weights/model_best.onnx), import them from ./Weights/model_best.onnx  in network option, select Compression: None (default)  
 -  In advanced settings, click on ONLY "Use activation buffer for input buffer" & "Use activation buffer for the output buffer" 
 
 For Keil-MDK5
-
 - Option for Target->Target->Code generation：Use default compiler version 6 & Use Micro LIB;
 - Option for Target->C/C++(AC6)->Optimization: -Oz image size
 - Option for Target->C/C++(AC6)->Click on "One ELF Section per Function" & "Link Time Optimization" & "Execute-only Code" & "Short enums/wchar"
-- Load the model on STM32F303K8 
+- Load the model on STM32F303K8
+- If you don't want to go through above steps then head over to 'best/MDK' dir and click on best.exec to launch the keil flasher. 
+- Once the code is flashed to board, head over to validation directory if you want to validate on embedded board. 
 
 ## Results on Nucleo STM32f303k8 board
 <p align="center">
