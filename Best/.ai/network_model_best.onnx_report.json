@@ -1,0 +1,484 @@
+{
+    "_allocate_inputs": 4,
+    "_allocate_outputs": 4,
+    "cli_parameters": "generate --name network -m C:/Users/vipin/New Volume/TinyML/OurPaper/Github/Weights/model_best.onnx --type onnx --compression none --verbosity 1 --workspace C:\\Users\\vipin\\AppData\\Local\\Temp\\mxAI_workspace7737287474002873435515575768478 --output C:\\Users\\vipin\\.stm32cubemx\\network_output --allocate-inputs --series stm32f3 --allocate-outputs",
+    "cli_version": {
+        "major": 1,
+        "micro": 0,
+        "minor": 7
+    },
+    "cli_version_str": "1.7.0",
+    "code_size": 0,
+    "compression": {
+        "factor": null,
+        "layers": {}
+    },
+    "date_time": "Mon Mar 18 12:59:07 2024",
+    "error": 0,
+    "error_str": [],
+    "exec_cmd": "generate",
+    "exec_duration": 0.0,
+    "hash": "3f98119f5090819c2cbfb9f7100859b3",
+    "inputs": [
+        "onnxSqueeze_0"
+    ],
+    "layers": [
+        {
+            "c_id": [
+                4
+            ],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 1152,
+                "psize": 4608,
+                "rom_size": 4704
+            },
+            "id": 8,
+            "inputs": [],
+            "name": "fc_layers_0_weight",
+            "original": "Gemm",
+            "type": "Placeholder"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 24,
+                "psize": 96,
+                "rom_size": 0
+            },
+            "id": 8,
+            "inputs": [],
+            "name": "fc_layers_0_bias",
+            "original": "Gemm",
+            "type": "Placeholder"
+        },
+        {
+            "c_id": [
+                6
+            ],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 288,
+                "psize": 1152,
+                "rom_size": 1200
+            },
+            "id": 10,
+            "inputs": [],
+            "name": "fc_layers_2_weight",
+            "original": "Gemm",
+            "type": "Placeholder"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 12,
+                "psize": 48,
+                "rom_size": 0
+            },
+            "id": 10,
+            "inputs": [],
+            "name": "fc_layers_2_bias",
+            "original": "Gemm",
+            "type": "Placeholder"
+        },
+        {
+            "c_id": [
+                8
+            ],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 24,
+                "psize": 96,
+                "rom_size": 104
+            },
+            "id": 12,
+            "inputs": [],
+            "name": "fc_layers_4_weight",
+            "original": "Gemm",
+            "type": "Placeholder"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 2,
+                "psize": 8,
+                "rom_size": 0
+            },
+            "id": 12,
+            "inputs": [],
+            "name": "fc_layers_4_bias",
+            "original": "Gemm",
+            "type": "Placeholder"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 5000,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        1,
+                        1250,
+                        1,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 0,
+            "inputs": [],
+            "name": "onnxSqueeze_0",
+            "original": "",
+            "type": "Input"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 0,
+                "psize": 0,
+                "rom_size": 0
+            },
+            "id": 2,
+            "inputs": [
+                "onnxSqueeze_0"
+            ],
+            "name": "_Squeeze_output_0",
+            "original": "Squeeze",
+            "type": "Reshape"
+        },
+        {
+            "c_id": [
+                0
+            ],
+            "extras": {
+                "n_macc": 7395,
+                "n_params": 99,
+                "psize": 396,
+                "rom_output": {
+                    "c_size": 924,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        77,
+                        3,
+                        1
+                    ]
+                },
+                "rom_size": 396
+            },
+            "id": 3,
+            "inputs": [
+                "_Squeeze_output_0"
+            ],
+            "name": "_conv1_conv1_0_Conv_output_0",
+            "original": "Conv",
+            "type": "Conv2D"
+        },
+        {
+            "c_id": [
+                1
+            ],
+            "extras": {
+                "n_macc": 231,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 924,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        77,
+                        3,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 4,
+            "inputs": [
+                "_conv1_conv1_0_Conv_output_0"
+            ],
+            "name": "_conv1_conv1_2_Relu_output_0",
+            "original": "Relu",
+            "type": "Nonlinearity"
+        },
+        {
+            "c_id": [
+                2
+            ],
+            "extras": {
+                "n_macc": 2307,
+                "n_params": 147,
+                "psize": 588,
+                "rom_output": {
+                    "c_size": 192,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        16,
+                        3,
+                        1
+                    ]
+                },
+                "rom_size": 588
+            },
+            "id": 5,
+            "inputs": [
+                "_conv1_conv1_2_Relu_output_0"
+            ],
+            "name": "_conv2_conv2_0_Conv_output_0",
+            "original": "Conv",
+            "type": "Conv2D"
+        },
+        {
+            "c_id": [
+                3
+            ],
+            "extras": {
+                "n_macc": 48,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 192,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        16,
+                        3,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 6,
+            "inputs": [
+                "_conv2_conv2_0_Conv_output_0"
+            ],
+            "name": "_conv2_conv2_1_Relu_output_0",
+            "original": "Relu",
+            "type": "Nonlinearity"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 0,
+                "n_params": 0,
+                "psize": 0,
+                "rom_size": 0
+            },
+            "id": 7,
+            "inputs": [
+                "_conv2_conv2_1_Relu_output_0"
+            ],
+            "name": "_flatten_Flatten_output_0",
+            "original": "Flatten",
+            "type": "Reshape"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 1176,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 96,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        24,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 8,
+            "inputs": [
+                "_flatten_Flatten_output_0",
+                "fc_layers_0_weight",
+                "fc_layers_0_bias"
+            ],
+            "name": "_fc_layers_fc_layers_0_Gemm_output_0",
+            "original": "Gemm",
+            "type": "Gemm"
+        },
+        {
+            "c_id": [
+                5
+            ],
+            "extras": {
+                "n_macc": 24,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 96,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        24,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 9,
+            "inputs": [
+                "_fc_layers_fc_layers_0_Gemm_output_0"
+            ],
+            "name": "_fc_layers_fc_layers_1_Relu_output_0",
+            "original": "Relu",
+            "type": "Nonlinearity"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 300,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 48,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        12,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 10,
+            "inputs": [
+                "_fc_layers_fc_layers_1_Relu_output_0",
+                "fc_layers_2_weight",
+                "fc_layers_2_bias"
+            ],
+            "name": "_fc_layers_fc_layers_2_Gemm_output_0",
+            "original": "Gemm",
+            "type": "Gemm"
+        },
+        {
+            "c_id": [
+                7
+            ],
+            "extras": {
+                "n_macc": 12,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 48,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        12,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 11,
+            "inputs": [
+                "_fc_layers_fc_layers_2_Gemm_output_0"
+            ],
+            "name": "_fc_layers_fc_layers_3_Relu_output_0",
+            "original": "Relu",
+            "type": "Nonlinearity"
+        },
+        {
+            "c_id": [],
+            "extras": {
+                "n_macc": 26,
+                "n_params": 0,
+                "psize": 0,
+                "rom_output": {
+                    "c_size": 8,
+                    "fmt": {
+                        "format": "float"
+                    },
+                    "shape": [
+                        2,
+                        1
+                    ]
+                },
+                "rom_size": 0
+            },
+            "id": 12,
+            "inputs": [
+                "_fc_layers_fc_layers_3_Relu_output_0",
+                "fc_layers_4_weight",
+                "fc_layers_4_bias"
+            ],
+            "name": "node_28",
+            "original": "Gemm",
+            "type": "Gemm"
+        }
+    ],
+    "model_files": [
+        "C:\\Users\\vipin\\New Volume\\TinyML\\OurPaper\\Github\\Weights\\model_best.onnx"
+    ],
+    "model_n_params": 1748,
+    "model_name": "model_best",
+    "model_size": 6992,
+    "model_type": "onnx",
+    "name": "network",
+    "outputs": [
+        "node_28"
+    ],
+    "ram_io_size": [
+        5000,
+        8
+    ],
+    "ram_size": [
+        5020,
+        5020
+    ],
+    "report_version": 1.1,
+    "rom_cfact": 1.0,
+    "rom_heap_inspector": 2048,
+    "rom_inputs": [
+        {
+            "c_size": 5000,
+            "c_type": "float",
+            "name": "onnxSqueeze_0"
+        }
+    ],
+    "rom_n_macc": 11519,
+    "rom_outputs": [
+        {
+            "c_size": 8,
+            "c_type": "float",
+            "name": "node_28"
+        }
+    ],
+    "rom_size": 6992,
+    "strategy": "heap_overlay",
+    "tools_api_version": {
+        "major": 1,
+        "micro": 0,
+        "minor": 7
+    },
+    "tools_version": {
+        "extra": "19520",
+        "major": 8,
+        "micro": 0,
+        "minor": 1
+    },
+    "val_error": -1.0,
+    "val_error_desc": "None (None) #-1",
+    "val_metrics": []
+}
