@@ -1,4 +1,5 @@
 # VATML: Ventricular Arrhythmia Detection using TinyML #
+
 Cardiac arrhythmias pose a significant health risk, underscoring the critical need for precise detection. Introducing "VATML: Ventricular Arrhythmia Detection using TinyML" demonstrating TinyML's potential to enable detection within implantable cardioverter defibrillators (ICDs). VATML features a lightweight 1D Convolutional Neural Network (CNN), tailored for life-threatening Ventricular Arrhythmias (VAs), with a minimal 15.86 KB footprint and low Multiply-Accumulate (MAC) complexity of 12.08K, meeting ICD operational demands.  
 
 ## Features
@@ -49,7 +50,10 @@ For Keil-MDK5
 </p>
 <img src="/images/Table2.png" alt="Setup Image" width="1300"/>
 
-
+##
+```
+  Accepted at IEEE International Symposium on Smart Electronic Systems (iSES), 2024
+```
 
 
   
